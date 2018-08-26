@@ -69,9 +69,10 @@ describe('loops', () => {
       console.log(array)
 
 
-      console.log("===========strangeArray=============")
+      console.log("===========strangeArray11=============")
       console.log("["+strangeArray+"]")
       console.log("["+strangeArray.length+"]")
+      console.log("===========strangeArray22=============")
 
       expect(newArray).to.have.length.of.at.most(l - 1)
     })
