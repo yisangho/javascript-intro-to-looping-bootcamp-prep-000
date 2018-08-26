@@ -19,7 +19,7 @@ function whileLoop(idx) {
   return 'done'
 }
 
-
+var i = 0;
 function incrementVariable() {
   i = i + 1;
 }
