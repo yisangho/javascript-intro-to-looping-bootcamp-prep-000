@@ -16,6 +16,7 @@ function whileLoop(idx) {
     console.log(idx)
     idx--;
   }
+  return 'done'
 }
 
 function doWhileLoop(arr) {
