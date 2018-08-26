@@ -11,8 +11,11 @@ function forLoop(arr) {
     return arr
 }
 
-function incrementVariable(arr, idx) {
-
+function incrementVariable(idx) {
+  while (idx) {
+    console.log(idx)
+    idx--;
+  }
 }
 
 function doWhileLoop(arr) {
