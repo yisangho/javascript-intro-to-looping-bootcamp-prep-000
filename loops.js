@@ -26,6 +26,6 @@ function incrementVariable() {
 
 function doWhileLoop(arr) {
   do {
-    arr.splice(i,i)
+    arr.splice(i,1)
   } while ( arr.length > 0 && incrementVariable())
 }
