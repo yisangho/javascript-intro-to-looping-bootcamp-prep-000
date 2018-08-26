@@ -45,7 +45,6 @@ describe('loops', () => {
       console.log("["+strangeArray+"]")
       console.log("["+strangeArray.length+"]")
 
-
       const testArray = strangeArray.slice(strangeArray.length)
       console.log("==========testArray==============")
       console.log(testArray)
@@ -56,10 +55,10 @@ describe('loops', () => {
 
       expect(strangeArray[11]).to.equal(first)
       expect(strangeArray[34]).to.equal(rest)
-      //expect(strangeArray.length).to.equal(t + 25)
+      expect(strangeArray.length).to.equal(t + 25)
     })
   })
-/*
+
   describe('whileLoop(n)', () => {
     it('counts down from n to 0', () => {
       const spy = chai.spy.on(console, 'log')
@@ -71,7 +70,7 @@ describe('loops', () => {
       console.log.reset()
     })
   })
-
+/*
   describe('doWhileLoop(array)', () => {
     it('removes elements from `array` until `array` is empty or until `incrementVariable()` returns `false`', () => {
       const [array, t] = makeArray()
