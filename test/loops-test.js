@@ -29,21 +29,10 @@ describe('loops', () => {
   describe('forLoop(array)', () => {
     it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
-      console.log("==========before==============")
-      console.log(array)
-      console.log(array.length)
+
 
       const strangeArray = forLoop(array)
-      console.log("==========After forLoop ==============")
-      console.log(array.length)
-      console.log(array)
 
-      console.log("11st:"+array[11])
-      console.log("34th:"+array[34])
-
-      console.log("===========strangeArray=============")
-      console.log("["+strangeArray+"]")
-      console.log("["+strangeArray.length+"]")
 
       const testArray = strangeArray.slice(strangeArray.length)
       console.log("==========testArray==============")
@@ -76,7 +65,20 @@ describe('loops', () => {
       const [array, t] = makeArray()
       const l = array.length
 
+      console.log("==========before==============")
+      console.log(array)
+      console.log(array.length)
+
       const newArray = doWhileLoop(array)
+
+      console.log("==========After forLoop ==============")
+      console.log(array.length)
+      console.log(array)
+
+
+      console.log("===========strangeArray=============")
+      console.log("["+strangeArray+"]")
+      console.log("["+strangeArray.length+"]")
 
       expect(newArray).to.have.length.of.at.most(l - 1)
     })
