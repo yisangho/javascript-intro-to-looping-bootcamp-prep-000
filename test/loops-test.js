@@ -29,16 +29,9 @@ describe('loops', () => {
   describe('forLoop(array)', () => {
     it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
-
-
       const strangeArray = forLoop(array)
-
-
       const testArray = strangeArray.slice(strangeArray.length)
-      console.log("==========testArray==============")
-      console.log(testArray)
-      console.log(testArray.length)
-
+      
       let first = "I am 1 strange loop."
       let rest = "I am 24 strange loops."
 
