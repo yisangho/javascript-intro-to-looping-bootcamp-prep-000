@@ -19,6 +19,13 @@ function whileLoop(idx) {
   return 'done'
 }
 
-function doWhileLoop(arr) {
 
+function incrementVariable() {
+  i = i + 1;
+}
+
+function doWhileLoop(arr) {
+  do {
+    
+  } while ( array.length > 0 && incrementVariable())
 }
